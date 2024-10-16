@@ -19,11 +19,11 @@
 
         default_layer {
             bindings = <
-&kp ESCAPE            &kp N1         &kp N2          &kp N3          &kp N4         &kp N5     &to 2                                                                                       &to 2              &kp N6      &kp N7         &kp N8        &kp N9           &kp N0     &kp DELETE
-&kp GRAVE             &kp W          &kp L           &kp R           &kp B          &kp Z      &kp SLASH                                                                                   &kp BACKSLASH      &kp G       &kp Q          &kp U         &kp D            &kp J      &kp EQUAL
-&kp SQT               &kp S          &kp H           &kp N           &kp T          &kp COMMA  &kp LEFT_BRACKET  &kp LEFT_COMMAND  &mo 1               &mo 1            &kp RIGHT_COMMAND  &kp RIGHT_BRACKET  &kp PERIOD  &kp A          &kp E         &kp O            &kp I      &kp MINUS
-&kp LEFT_PARENTHESIS  &kp F          &kp M           &kp V           &kp C          &kp LCTRL                                      &kp LEFT_ALT        &kp RIGHT_ALT                                          &kp RCTRL   &kp P          &kp X         &kp K            &kp Y      &kp RIGHT_PARENTHESIS
-&kp HOME              &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp SEMICOLON             &kp SPACE         &kp BACKSPACE     &kp LEFT_SHIFT      &kp RIGHT_SHIFT  &kp TAB            &kp ENTER                      &kp SEMICOLON  &kp UP_ARROW  &kp RIGHT_ARROW  &kp PG_UP  &kp END
+&kp ESCAPE            &kp N1         &kp N2  &kp N3  &kp N4         &kp N5     &to 2                                                                                       &to 2              &kp N6      &kp N7         &kp N8  &kp N9  &kp N0     &kp DELETE
+&kp GRAVE             &kp W          &kp L   &kp R   &kp B          &kp Z      &kp SLASH                                                                                   &kp BACKSLASH      &kp G       &kp Q          &kp U   &kp D   &kp J      &kp EQUAL
+&kp SQT               &kp S          &kp H   &kp N   &kp T          &kp COMMA  &kp LEFT_BRACKET  &kp LEFT_COMMAND  &mo 1               &mo 1            &kp RIGHT_COMMAND  &kp RIGHT_BRACKET  &kp PERIOD  &kp A          &kp E   &kp O   &kp I      &kp MINUS
+&kp LEFT_PARENTHESIS  &kp F          &kp M   &kp V   &kp C          &kp LCTRL                                      &kp LEFT_ALT        &kp RIGHT_ALT                                          &kp RCTRL   &kp P          &kp X   &kp K   &kp Y      &kp RIGHT_PARENTHESIS
+&kp HOME              &kp PAGE_DOWN  &none   &mo 3   &kp SEMICOLON             &kp SPACE         &kp BACKSPACE     &kp LEFT_SHIFT      &kp RIGHT_SHIFT  &kp TAB            &kp ENTER                      &kp SEMICOLON  &mo 3   &none   &kp PG_UP  &kp END
             >;
         };
 
@@ -44,6 +44,16 @@
 &trans          &kp A   &kp S   &kp D   &kp F   &trans  &trans  &trans  &trans                    &trans                 &trans  &trans  &trans  &kp H   &kp J   &kp K   &kp L   &trans
 &kp LEFT_SHIFT  &kp Z   &kp X   &kp C   &kp V   &trans                  &trans                    &trans                                 &trans  &kp B   &kp N   &kp M   &kp G   &kp RIGHT_SHIFT
 &trans          &trans  &trans  &trans  &trans          &trans  &trans  &kp LEFT_PARENTHESIS      &kp RIGHT_PARENTHESIS  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        arrows {
+            bindings = <
+&trans  &trans          &trans          &trans        &trans           &trans  &trans                                      &trans  &trans  &trans          &trans          &trans        &trans           &trans
+&trans  &trans          &trans          &trans        &trans           &trans  &trans                                      &trans  &trans  &trans          &trans          &trans        &trans           &trans
+&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
+&trans  &trans          &trans          &trans        &trans           &trans                  &trans      &trans                  &trans  &trans          &trans          &trans        &trans           &trans
+&trans  &trans          &trans          &trans        &trans                   &trans  &trans  &trans      &trans  &trans  &trans          &trans          &trans          &trans        &trans           &trans
             >;
         };
     };
